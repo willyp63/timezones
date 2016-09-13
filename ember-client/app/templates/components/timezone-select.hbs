@@ -1,0 +1,6 @@
+<h3 class="timezone-select-tag">I'M CURRENTLY IN</h3>
+<select onchange={{action "timezoneChange" value="target.value"}} class='timezone-select'>
+  {{#each timezones as |timezone|}}
+    <option value={{timezone}} selected={{eq timezone selectedTimezone}}>{{timezone}}</option>
+  {{/each}}
+</select>

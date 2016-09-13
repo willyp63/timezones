@@ -1,0 +1,59 @@
+body {
+  font-family: sans-serif;
+}
+
+.title {
+  text-align: center;
+}
+
+.current-user {
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.session-btn {
+  min-height: 30px;
+  border: none;
+  background-color: #49f;
+  box-shadow: 0 1px 2px black;
+  font-size: 14px;
+  color: #fff;
+}
+
+.user-icon {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: red;
+}
+
+.timezone-select {
+  float: left;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #fff;
+  background-position-x: 278px;
+  padding: 4px 8px;
+  width: 300px;
+  height: 25px;
+  border-radius: 2px;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0 1px 2px black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.timezone-select-tag {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 10px;
+  color: gray;
+}

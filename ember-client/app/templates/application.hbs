@@ -1,0 +1,13 @@
+<h2 class="title">Timezones</h2>
+
+<div class="current-user">
+  {{#if session.isAuthenticated}}
+    {{user-icon name=currentUser.user.displayName}}
+    {{timezone-select action="timezoneChange"}}
+    <button {{action 'invalidateSession' on='click'}} class='session-btn'>Sign out</button>
+  {{else}}
+    <button {{action 'sessionRequiresAuthentication' on='click'}} class='session-btn'>Sign in with Google</button>
+  {{/if}}
+</div>
+
+{{outlet}}
