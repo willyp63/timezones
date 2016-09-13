@@ -1,5 +1,3 @@
-<h2 class="title">Timezones</h2>
-
 <div class="current-user">
   {{#if session.isAuthenticated}}
     {{user-icon name=currentUser.user.displayName}}
@@ -10,4 +8,7 @@
   {{/if}}
 </div>
 
+{{#each model as |user|}}
+  {{user-icon name=user.displayName}}
+{{/each}}
 {{outlet}}

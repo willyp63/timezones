@@ -8,7 +8,9 @@ export default Ember.Controller.extend({
       this.get('session').invalidate();
     },
     timezoneChange (newTimezone) {
-      console.log(newTimezone);
+      const currentUser = this.get('currentUser.user');
+      currentUser.set('timezone', newTimezone);
+      currentUser.save();
     }
   }
 });

@@ -2,10 +2,6 @@ body {
   font-family: sans-serif;
 }
 
-.title {
-  text-align: center;
-}
-
 .current-user {
   margin: 0 auto;
   width: 500px;
